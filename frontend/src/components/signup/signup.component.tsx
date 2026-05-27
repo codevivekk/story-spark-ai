@@ -290,6 +290,7 @@ const SignUpComponent = () => {
                 required={true}
                 icon="fas fa-user"
                 register={register}
+                autoComplete="name"
                 validation={{
                   required: "Name is required",
                 minLength: {
@@ -313,6 +314,7 @@ const SignUpComponent = () => {
                 required={true}
                 icon="fas fa-envelope"
                 register={register}
+                autoComplete="email"
                 error={errors.email}
               />
 
@@ -324,6 +326,7 @@ const SignUpComponent = () => {
                 required={true}
                 icon="fas fa-lock"
                 register={register}
+                autoComplete="new-password"
                 error={errors.password}
               />
 
@@ -373,6 +376,7 @@ const SignUpComponent = () => {
                 required={true}
                 icon="fas fa-eye"
                 register={register}
+                autoComplete="new-password"
                 error={errors.confirmPassword}
               />
 
